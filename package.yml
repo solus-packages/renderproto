@@ -1,0 +1,18 @@
+name        : renderproto
+version     : 0.11.1
+release     : 4
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/renderproto-0.11.1.tar.gz : a0a4be3cad9381ae28279ba5582e679491fc2bec9aab8a65993108bf8dbce5fe
+license     :
+    - MIT
+summary     : X Rendering Extension
+component   : xorg.proto
+patterns    : /
+description : |
+    This extension defines the protcol for a digital image composition as the foundation of a new rendering model within the X Window System.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
